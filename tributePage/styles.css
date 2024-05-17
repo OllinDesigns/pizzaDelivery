@@ -1,0 +1,24 @@
+#main{
+
+}
+
+img {
+  display: block;
+}
+
+#img-div{
+
+} 
+
+#image{ }
+#img-caption{ } 
+#tribute-info{ } 
+#tribute-link{ }
+
+#title{
+  font-family: 'Montserrat', sans-serif
+}
+
+#image {
+  max-width: 100%;
+}

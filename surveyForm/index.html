@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="fortitle">
+      <!-- <img src="./img/OllinLogo.png" alt="OllinDesigns logo" /> -->
+      <img src="https://i.ibb.co/MgbMdQd/Copia-de-Ollin-Designs-la-morsa.png" alt="OllinDesigns logo" />
+      <h1 id="title">Survey Form</h1>
+    </div>
+    <div id="fordescription">
+      <p id="description">Thank you for visting Ollin Designs</p>
+      <p id="description">Here a description about the form</p>
+    </div>
+    <form id="survey-form">
+      <div id="first-part">
+        <fieldset>
+          <label for="name" id="name-label"
+            >Name:
+            <input
+              id="name"
+              name="name-label"
+              type="text"
+              placeholder="Please write your name"
+              required
+          /></label>
+          <label for="email" id="email-label"
+            >Enter Your Email:
+            <input
+              id="email"
+              name="email-label"
+              type="email"
+              placeholder="Please write your email"
+              required
+          /></label>
+          <label for="number" id="number-label"
+            >Age (optional)
+            <input
+              id="number"
+              type="number"
+              name="åbel"
+              min="14"
+              max="120"
+              placeholder="Please write your age"
+          /></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="dropdown">Are you:</label>
+          <select name="dropdown" id="dropdown">
+            <option value="happy">Happy</option>
+            <option value="unhappy">Unhappy</option>
+          </select>
+        </fieldset>
+      </div>
+      <fieldset>
+        <div id="radio-checkbox">
+          <h2>Are you:</h2>
+          <div class="inline">
+            <input type="radio" id="student" name="optional" value="student" />
+            <label for="student" id="student">A student</label>
+          </div>
+          <br />
+          <input
+            type="radio"
+            id="profesional"
+            name="optional"
+            value="profesional"
+          />
+          <label for="profesional">A profesional</label>
+
+          <br />
+          <h2>I want to learn:</h2>
+          <input
+            type="checkbox"
+            id="front-end"
+            name="front-end"
+            value="front-end"
+          />
+          <label for="front-end"> Front-end development</label><br />
+          <input
+            type="checkbox"
+            id="back-end"
+            name="back-end"
+            value="back-end"
+          />
+          <label for="back-end"> Back-end development</label><br />
+          <input
+            type="checkbox"
+            id="data-science"
+            name="data-science"
+            value="data-science"
+          />
+          <label for="data-science"> Data Science</label><br />
+        </div>
+
+        <label for="mytextarea">Describe yourself:</label>
+
+        <textarea id="mytextarea" name="mytextarea" rows="4" cols="50">
+              Write here
+               </textarea
+        >
+
+        <input type="submit" value="Submit" id="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>
