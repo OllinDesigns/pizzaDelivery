@@ -1,22 +1,67 @@
-#main{
+body {
+  background-color: #bdd2cb;
+}
 
+#main {
+  font-family: "Poppins", sans-serif;
 }
 
 img {
   display: block;
 }
 
-#img-div{
+#container {
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  border: 1px solid #e0c3b4;
+}
 
-} 
+#img-div {
+  width: 100%;
+}
 
-#image{ }
-#img-caption{ } 
-#tribute-info{ } 
-#tribute-link{ }
+#image {
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
 
-#title{
-  font-family: 'Montserrat', sans-serif
+#img-caption {
+  color: #b78100;
+}
+#tribute-info {
+  font-size: 1.1em;
+}
+
+#tribute-info h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2em;
+  color: #b78100;
+  margin-top: 40px;
+}
+
+#link {
+  text-align: center;
+  margin: 0 auto;
+}
+
+#link a:hover {
+  color: #b78100 !important;
+}
+
+#tribute-link {
+  text-decoration: none;
+  color: #b74200;
+}
+
+#title {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  color: #b74200;
+  padding: 15px;
 }
 
 #image {
