@@ -1,13 +1,155 @@
-
 body {
-    font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: #20232a;
+  color: #eff0f1;
 }
 
+code {
+  background-color: #272621;
+  display: block;
+  font-size: 0.9em;
+  padding: 20px;
+}
 
-@media (max-width: 768px) {
-    body {
-        font-size: 14px; 
-    }
+#navbar {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: #53b4d0;
+  /* border-color: rgba(0, 22, 22, 0.4); */
+  border-bottom: 2px solid;
+}
+
+#navbar header h2 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+}
+
+/* #navbar ul navbar li no alteran mucho el efecto de la pagina */
+#navbar ul {
+  height: 88%;
+  padding: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+#navbar li {
+  border-top: 1px solid;
+  list-style: none;
+  position: relative;
+  width: 100%;
+}
+
+#navbar a {
+  display: block;
+  padding: 10px 30px;
+  color: #60d8f9;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#navbar a:hover {
+  background-color: #667c85;
+  color: #272621;
+}
+
+#airfblue {
+  color: #478aa8;
+}
+
+#violet {
+  color: #c485bf;
+}
+
+#vanilla {
+  color: #dcdcab;
+}
+
+#dskyblue {
+  color: #4fbefb;
+}
+
+#aspgreen {
+  color: #6b9955;
+}
+
+#persorange {
+  color: #c78c74;
+}
+
+#turquoise{
+  color: #4EC9B0;
+}
+
+#jonquil {
+  color: #ECC807;
+}
+
+.main-section header h1 {
+  color: #60d8f9;
+  padding-top: 10px;
+}
+
+@media only screen and (max-width: 815px) {
+  #navbar ul {
+    border: 1px solid;
+    height: 207px;
+  }
+
+  #navbar {
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 380px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+  }
+
+  #navbar header img {
+    width: 100%;
+  }
+
+  #navbar a:hover {
+    background-color: #667c85 !important;
+    color: #272621 !important;
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 380px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #main-doc {
+    margin-left: -10px;
+  }
+
+  code {
+    margin-left: -20px;
+    width: 100%;
+    padding: 15px;
+    padding-left: 10px;
+    padding-right: 45px;
+    min-width: 233px;
+  }
 }

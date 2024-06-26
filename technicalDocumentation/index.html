@@ -1,74 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-     <nav id="navbar">
-          <header>A Header</header>
-          <a href="#Section_1" class="nav-link">Section 1</a>
-<a href="#Section_2" class="nav-link">Section 2</a>
-<a href="#Section_3" class="nav-link">Section 3</a>
-<a href="#Section_4" class="nav-link">Section 4</a>
-<a href="#Section_5" class="nav-link">Section 5</a>
-
-     </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://i.ibb.co/nQXJfQT/sextosol.jpg"
+      alt="sextosol"
+      border="0"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>
+        <img
+          src="https://i.ibb.co/MgbMdQd/Copia-de-Ollin-Designs-la-morsa.png"
+          alt="OllinDesigns logo"
+        />
+        <h2>React Technical Documentation Page</h2>
+      </header>
+      <a href="#Section_1" class="nav-link">What is React?</a>
+      <a href="#Section_2" class="nav-link">Getting Started</a>
+      <a href="#Section_3" class="nav-link">Components and Props</a>
+      <a href="#Section_4" class="nav-link">State and Lifecycle</a>
+      <a href="#Section_5" class="nav-link">Handling Events</a>
+    </nav>
     <main id="main-doc">
+      <section class="main-section" id="Section_1">
+        <header id="section1">
+          <h1 id="section1">What is React?</h1>
+        </header>
+        <article>
+          <p>
+            React is a popular JavaScript library for building user interfaces,
+            particularly for single-page applications. It is maintained by
+            Facebook and a community of individual developers and companies.
+          </p>
 
-        <section class="main-section" id="Section_1">
+          <p>
+            React allows developers to create large web applications that can
+            update and render efficiently in response to data changes. It is
+            component-based, meaning the user interface is broken down into
+            reusable components, each managing its own state.
+          </p>
+          <code>
+            <span id="violet">import</span> <span id="dskyblue">React</span>  <span id="violet">from</span> <span id="persorange">"react";</span> 
+            <br />
+            <span id="violet">import</span> { <span id="dskyblue">BrowserRouter as Router, Route, Routes, Navigate</span> } <span id="violet">from</span>
+            <span id="persorange">"react-router-dom";</span>
+            <br />
+            <span id="violet">import</span> <span id="dskyblue">Login</span> <span id="violet">from</span> <span id="persorange">"./components/Login";</span>
+            <br />
+            <br />
+            <span id="airfblue">function</span> <span id="vanilla">App() {</span> 
+            <br />
+            &nbsp;&nbsp;<span id="violet">return (</span>
+            <br />
+            &nbsp;&nbsp;...
+            <br />
+            &nbsp;&nbsp;<span id="violet">)</span>
+            <br />
+            &nbsp;<span id="vanilla">}</span> 
+          </code>
+          <ul>
+            <li>
+              JSX: React uses a syntax extension called JSX which allows
+              HTML-like code to coexist with JavaScript logic. This makes it
+              easier to visualize the UI structure and behavior.
+            </li>
+            <li>
+              Virtual DOM: React uses a virtual DOM to optimize updates and
+              improve performance. Changes to the DOM are first made to the
+              virtual DOM, which is then compared to the actual DOM to determine
+              the most efficient way to update the UI.
+            </li>
+            <li>
+              Unidirectional Data Flow: React enforces a unidirectional data
+              flow, making it easier to debug and understand applications. Data
+              flows down from parent to child components, ensuring a predictable
+              application state.
+            </li>
+          </ul>
+        </article>
+      </section>
 
-            <header id="section1">
-                <h1 id="section1">Section 1</h1>
-            </header>
-            <p>Some text</p>
-    <p>Some text</p>
-     <code>code 1</code>
-     <li>li 1</li>
-        </section>
-        <section class="main-section" id="Section_2">
+      <section class="main-section" id="Section_2">
+        <header id="section2">
+          <h1 id="section2">Getting Started</h1>
+        </header>
+        <article>
+          <p>
+            To start using React, you need to set up your development
+            environment. The simplest way is by using the Create React App tool,
+            which sets up a new React project with a sensible default
+            configuration.
+          </p>
+          <p>
+            Once you have your environment set up, you can create a React
+            component by defining a JavaScript function or class. Components can
+            then be combined to build complex user interfaces.
+          </p>
+          <code
+            ><span id="aspgreen">&lt;!-- Step 1: Create a new React app --&gt;</span> 
+            <br />
+            npx create-react-app my-app
+            <br />
+            <br />
+            <span id="aspgreen">&lt;!-- Step 2: Navigate into the project directory --&gt;</span>
+            <br />
+            cd my-app
+            <br />
+            <br />
+            <span id="aspgreen">&lt;!-- Step 3: Start the development server --&gt;</span>
+            <br />
+            npm start</code
+          >
+          <ul>
+            <li>
+              Install Node.js and npm, as they are required to use Create React
+              App.
+            </li>
+            <li>
+              Use the command `npx create-react-app my-app` to set up a new
+              React project with a default configuration.
+            </li>
+          </ul>
+        </article>
+      </section>
 
-            <header id="section2">
-                <h1 id="section2">Section 2</h1>
-            </header>
-            <p>Some text</p>
-    <p>Some text</p>
-    <code>code 2</code>
-    <li>li 2</li>
-        </section>
-        <section class="main-section" id="Section_3">
+      <section class="main-section" id="Section_3">
+        <header id="section3">
+          <h1 id="3">Components and Props</h1>
+        </header>
+        <article>
+          <p>
+            React components are the building blocks of a React application.
+            They can be defined as functions or classes, and they accept inputs
+            called "props" which allow data to be passed from one component to
+            another.
+          </p>
+          <p>
+            Props are read-only, ensuring that data flows in one direction. This
+            unidirectional data flow simplifies the understanding and debugging
+            of React applications.
+          </p>
 
-            <header id="section3">
-                <h1 id="3">Section 3</h1>
-            </header>
-            <p>Some text</p>
-    <p>Some text</p>
-    <code>code 3</code>
-    <li>li 3</li>
-        </section>
-        <section class="main-section" id="Section_4">
+          <code
+            ><span id="aspgreen">&lt;!-- Define a React component with props --&gt;</span>
+            <br />
+            <span id="airfblue">function</span> <span id="vanilla">Welcome(</span><span id="dskyblue">props</span>) { 
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return</span> &lt;<span id="airfblue">h1</span>&gt;Hello,
+            {<span id="dskyblue">props.name</span>}&lt;<span id="airfblue">/h1</span>&gt;; 
+          <br>
+          &nbsp;&nbsp;}
+            <br />
+            <br />
+            <span id="aspgreen">&lt;!-- Use the component with different props --&gt;</span>
+            <br />
+            <span id="airfblue">function</span> <span id="vanilla">App() {</span> 
+            <br />
+            &nbsp;&nbsp;<span id="violet">return (</span>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="airfblue">div</span>&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="turquoise">Welcome</span>
+            name="Alice" /&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="turquoise">Welcome</span>
+            name="Bob" /&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="airfblue">/div</span>&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">)</span>;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;}
+            <br />
+            <br />
+            <span id="aspgreen">&lt;!-- Render the App component to the DOM --&gt;</span>
+            <br />
+            ReactDOM.render(&lt;App /&gt;,
+            document.getElementById('root'));</code
+          >
 
-            <header id="section4">
-                <h1 id="section4">Section 4</h1>
-            </header>
-            <p>Some text</p>
-    <p>Some text</p>
-    <code>code 4</code>
-    <li>li 4</li>
-        </section>
-        <section class="main-section" id="Section_5">
+          <ul>
+            <li>
+              Define React components using JavaScript functions or classes.
+            </li>
+            <li>
+              Pass data to components using props, allowing for dynamic and
+              reusable UI elements.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Section_4">
+        <header id="section4">
+          <h1 id="section4">State and Lifecycle</h1>
+        </header>
+        <article>
+          <p>
+            State is a built-in object in React components that allows them to
+            create and manage their own data. Unlike props, state is private and
+            fully controlled by the component.
+          </p>
+          <p>
+            React components can also have lifecycle methods, which allow
+            developers to run code at specific points in a component’s life,
+            such as when it mounts or updates.
+          </p>
 
-            <header id="section5">
-                <h1 id="section5">Section 5</h1>
-            </header>
-            <p>Some text</p>
-    <p>Some text</p>
-    <code>code 5</code>
-    <li>li 5</li>
-        </section>
+          <code
+            ><span id="aspgreen">&lt;!-- Define a class component with state and lifecycle methods
+              --&gt;</span>
+            <br />
+            <br />
+            class Clock extends React.Component {
+            <br />
+            &nbsp;&nbsp;constructor(props) {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;super(props);
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.state = { date: new Date() };
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            <br />
+            &nbsp;&nbsp;componentDidMount() {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.timerID = setInterval(
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; () => this.tick(),
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1000
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            <br />
+            &nbsp;&nbsp;componentWillUnmount() {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;clearInterval(this.timerID);
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            <br />
+            &nbsp;&nbsp;tick() {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.setState({
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; date: new Date()
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;});
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            <br />
+            &nbsp;&nbsp;render() {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return (</span>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello,
+            world!&lt;/h1&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;It
+            is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">)</span>;
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            }
+            <br />
+            <br />
+            <span id="aspgreen">// Render the Clock component to the DOM</span>
+            <br />
+            ReactDOM.render(&lt;Clock /&gt;,
+            document.getElementById('root'));</code
+          >
+
+          <ul>
+            <li>
+              Use state to store data that changes over time within a component.
+            </li>
+            <li>
+              Lifecycle methods such as `componentDidMount` and
+              `componentWillUnmount` allow you to run code at specific times in
+              a component's lifecycle.
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="main-section" id="Section_5">
+        <header id="section5">
+          <h1 id="section5">Handling Events</h1>
+        </header>
+        <article>
+          <p>
+            React allows you to handle events such as clicks, form submissions,
+            and keyboard input using event handlers. These handlers are added to
+            elements via JSX attributes and are written as JavaScript functions.
+          </p>
+          <p>
+            Event handling in React is similar to handling events in plain HTML,
+            but with the added benefit of React's unidirectional data flow and
+            component reusability.
+          </p>
+
+          <code>
+            <span id="aspgreen">&lt;!-- Define a React component to handle events --&gt;</span>
+            <br />
+            <br />
+            class Toggle extends React.Component {
+            <br />
+            &nbsp;&nbsp;constructor(props) {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;super(props);
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.state = { isToggleOn: true };
+            <br />
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="aspgreen">// This binding is necessary to make `this` work in the callback</span>
+            
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.handleClick =
+            this.handleClick.bind(this);
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            <br />
+            &nbsp;&nbsp;handleClick() {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;this.setState(prevState => ({
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;isToggleOn: !prevState.isToggleOn
+            <br />
+            &nbsp;&nbsp;}));
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            <br />
+            &nbsp;&nbsp;render() {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return (</span>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button
+            onClick={this.handleClick}&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.isToggleOn
+            ? 'ON' : 'OFF'}
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">);</span>
+            <br />
+            &nbsp;&nbsp;}
+            <br />
+            }
+            <br />
+            <br />
+            <span id="aspgreen">//Render the Toggle component to the DOM</span>
+            <br />
+            ReactDOM.render(&lt;Toggle /&gt;, document.getElementById('root'));
+          </code>
+
+          <ul>
+            <li>
+              Handle events in React by defining event handler functions and
+              binding them to the component instance.
+            </li>
+            <li>
+              Use the `setState` method to update the component's state in
+              response to user actions such as clicks.
+            </li>
+          </ul>
+        </article>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
