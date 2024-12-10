@@ -27,9 +27,18 @@
       <a href="#Section_4" class="nav-link">State and Lifecycle</a>
       <a href="#Section_5" class="nav-link">Handling Events</a>
     </nav>
-    <main id="main-doc">
+    <main id="doc">
       <section class="main-section" id="Section_1">
         <header id="section1">
+          <img
+            src="https://brandeps.com/logo-download/R/React-logo-vector-01.svg"
+            alt="React Logo"
+            class="react-logo"
+          />
+
+          <!-- <div class="react-logo">
+          
+          </div> -->
           <h1 id="section1">What is React?</h1>
         </header>
         <article>
@@ -46,15 +55,23 @@
             reusable components, each managing its own state.
           </p>
           <code>
-            <span id="violet">import</span> <span id="dskyblue">React</span>  <span id="violet">from</span> <span id="persorange">"react";</span> 
+            <span id="violet">import</span> <span id="dskyblue">React</span>
+            <span id="violet">from</span> <span id="persorange">"react";</span>
             <br />
-            <span id="violet">import</span> { <span id="dskyblue">BrowserRouter as Router, Route, Routes, Navigate</span> } <span id="violet">from</span>
+            <span id="violet">import</span> {
+            <span id="dskyblue"
+              >BrowserRouter as Router, Route, Routes, Navigate</span
+            >
+            } <span id="violet">from</span>
             <span id="persorange">"react-router-dom";</span>
             <br />
-            <span id="violet">import</span> <span id="dskyblue">Login</span> <span id="violet">from</span> <span id="persorange">"./components/Login";</span>
+            <span id="violet">import</span> <span id="dskyblue">Login</span>
+            <span id="violet">from</span>
+            <span id="persorange">"./components/Login";</span>
             <br />
             <br />
-            <span id="airfblue">function</span> <span id="vanilla">App() {</span> 
+            <span id="airfblue">function</span>
+            <span id="vanilla">App() {</span>
             <br />
             &nbsp;&nbsp;<span id="violet">return (</span>
             <br />
@@ -62,7 +79,7 @@
             <br />
             &nbsp;&nbsp;<span id="violet">)</span>
             <br />
-            &nbsp;<span id="vanilla">}</span> 
+            &nbsp;<span id="vanilla">}</span>
           </code>
           <ul>
             <li>
@@ -103,17 +120,23 @@
             then be combined to build complex user interfaces.
           </p>
           <code
-            ><span id="aspgreen">&lt;!-- Step 1: Create a new React app --&gt;</span> 
+            ><span id="aspgreen"
+              >&lt;!-- Step 1: Create a new React app --&gt;</span
+            >
             <br />
             npx create-react-app my-app
             <br />
             <br />
-            <span id="aspgreen">&lt;!-- Step 2: Navigate into the project directory --&gt;</span>
+            <span id="aspgreen"
+              >&lt;!-- Step 2: Navigate into the project directory --&gt;</span
+            >
             <br />
             cd my-app
             <br />
             <br />
-            <span id="aspgreen">&lt;!-- Step 3: Start the development server --&gt;</span>
+            <span id="aspgreen"
+              >&lt;!-- Step 3: Start the development server --&gt;</span
+            >
             <br />
             npm start</code
           >
@@ -148,38 +171,62 @@
           </p>
 
           <code
-            ><span id="aspgreen">&lt;!-- Define a React component with props --&gt;</span>
+            ><span id="aspgreen"
+              >&lt;!-- Define a React component with props --&gt;</span
+            >
             <br />
-            <span id="airfblue">function</span> <span id="vanilla">Welcome(</span><span id="dskyblue">props</span>) { 
-            <br>
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return</span> &lt;<span id="airfblue">h1</span>&gt;Hello,
-            {<span id="dskyblue">props.name</span>}&lt;<span id="airfblue">/h1</span>&gt;; 
-          <br>
-          &nbsp;&nbsp;}
+            <span id="airfblue">function</span>
+            <span id="vanilla">Welcome(</span><span id="dskyblue">props</span>)
+            {
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return</span> &lt;<span
+              id="airfblue"
+              >h1</span
+            >&gt;Hello, {<span id="dskyblue">props.name</span>}&lt;<span
+              id="airfblue"
+              >/h1</span
+            >&gt;;
+            <br />
+            &nbsp;&nbsp;}
             <br />
             <br />
-            <span id="aspgreen">&lt;!-- Use the component with different props --&gt;</span>
+            <span id="aspgreen"
+              >&lt;!-- Use the component with different props --&gt;</span
+            >
             <br />
-            <span id="airfblue">function</span> <span id="vanilla">App() {</span> 
+            <span id="airfblue">function</span>
+            <span id="vanilla">App() {</span>
             <br />
             &nbsp;&nbsp;<span id="violet">return (</span>
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="airfblue">div</span>&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="airfblue"
+              >div</span
+            >&gt;
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="turquoise">Welcome</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span
+              id="turquoise"
+              >Welcome</span
+            >
             name="Alice" /&gt;
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="turquoise">Welcome</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span
+              id="turquoise"
+              >Welcome</span
+            >
             name="Bob" /&gt;
             <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="airfblue">/div</span>&gt;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="airfblue"
+              >/div</span
+            >&gt;
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">)</span>;
             <br />
             &nbsp;&nbsp;&nbsp;&nbsp;}
             <br />
             <br />
-            <span id="aspgreen">&lt;!-- Render the App component to the DOM --&gt;</span>
+            <span id="aspgreen"
+              >&lt;!-- Render the App component to the DOM --&gt;</span
+            >
             <br />
             ReactDOM.render(&lt;App /&gt;,
             document.getElementById('root'));</code
@@ -212,79 +259,76 @@
             such as when it mounts or updates.
           </p>
 
-          <code
-            ><span id="aspgreen">&lt;!-- Define a class component with state and lifecycle methods
-              --&gt;</span>
-            <br />
-            <br />
-            class Clock extends React.Component {
-            <br />
-            &nbsp;&nbsp;constructor(props) {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;super(props);
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;this.state = { date: new Date() };
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            <br />
-            &nbsp;&nbsp;componentDidMount() {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;this.timerID = setInterval(
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; () => this.tick(),
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1000
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;);
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            <br />
-            &nbsp;&nbsp;componentWillUnmount() {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;clearInterval(this.timerID);
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            <br />
-            &nbsp;&nbsp;tick() {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;this.setState({
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; date: new Date()
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;});
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            <br />
-            &nbsp;&nbsp;render() {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return (</span>
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;div&gt;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Hello,
-            world!&lt;/h1&gt;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;It
-            is {this.state.date.toLocaleTimeString()}.&lt;/h2&gt;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/div&gt;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">)</span>;
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            }
-            <br />
-            <br />
-            <span id="aspgreen">// Render the Clock component to the DOM</span>
-            <br />
-            ReactDOM.render(&lt;Clock /&gt;,
-            document.getElementById('root'));</code
-          >
+          <code>
+            <span id="aspgreen"
+              >&lt;!-- Define a class component with state and lifecycle methods
+              --&gt;</span
+            >
+            <br /><br />
+            <span id="airfblue">class</span> <span id="dskyblue">Clock</span>
+            <span id="airfblue">extends</span>
+            <span id="dskyblue">React.Component</span> {<br />
+            &nbsp;&nbsp;<span id="airfblue">constructor</span>(<span
+              id="vanilla"
+              >props</span
+            >) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="airfblue">super</span>(<span
+              id="vanilla"
+              >props</span
+            >);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">this.state</span> = {
+            <span id="violet">date</span>: <span id="airfblue">new</span>
+            <span id="dskyblue">Date</span>() };<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;<span id="airfblue">componentDidMount</span>() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">this.timerID</span> =
+            <span id="violet">setInterval</span>(<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;() =>
+            <span id="violet">this.tick()</span>,<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="vanilla">1000</span
+            ><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;<span id="airfblue">componentWillUnmount</span>() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">clearInterval</span>(<span
+              id="violet"
+              >this.timerID</span
+            >);<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;<span id="airfblue">tick</span>() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">this.setState</span
+            >({<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">date</span>:
+            <span id="airfblue">new</span>
+            <span id="dskyblue">Date</span>()<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;});<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;<span id="airfblue">render</span>() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return</span> (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="violet">div</span
+            >&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span
+              id="violet"
+              >h1</span
+            >&gt;Hello, world!&lt;/<span id="violet">h1</span>&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span
+              id="violet"
+              >h2</span
+            >&gt;It is {<span id="violet"
+              >this.state.date.toLocaleTimeString()</span
+            >}.&lt;/<span id="violet">h2</span>&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span id="violet">div</span
+            >&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);<br />
+            &nbsp;&nbsp;}<br />
+            }<br /><br />
+            <span id="aspgreen">// Render the Clock component to the DOM</span
+            ><br />
+            <span id="dskyblue">ReactDOM.render</span>(&lt;<span id="dskyblue"
+              >Clock</span
+            >
+            /&gt;, <span id="violet">document.getElementById</span>('root'));
+          </code>
 
           <ul>
             <li>
@@ -315,60 +359,70 @@
           </p>
 
           <code>
-            <span id="aspgreen">&lt;!-- Define a React component to handle events --&gt;</span>
+            <span id="aspgreen"
+              >&lt;!-- Define a React component to handle events --&gt;</span
+            >
+            <br /><br />
+            <span id="airfblue">class</span> <span id="dskyblue">Toggle</span>
+            <span id="airfblue">extends</span>
+            <span id="dskyblue">React.Component</span> {<br />
+            &nbsp;&nbsp;<span id="airfblue">constructor</span>(<span
+              id="vanilla"
+              >props</span
+            >) {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="airfblue">super</span>(<span
+              id="vanilla"
+              >props</span
+            >);<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">this.state</span> = {
+            <span id="violet">isToggleOn</span>:
+            <span id="turquoise">true</span> };<br />
             <br />
-            <br />
-            class Toggle extends React.Component {
-            <br />
-            &nbsp;&nbsp;constructor(props) {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;super(props);
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;this.state = { isToggleOn: true };
-            <br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="aspgreen">// This binding is necessary to make `this` work in the callback</span>
-            
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;this.handleClick =
-            this.handleClick.bind(this);
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            <br />
-            &nbsp;&nbsp;handleClick() {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;this.setState(prevState => ({
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;isToggleOn: !prevState.isToggleOn
-            <br />
-            &nbsp;&nbsp;}));
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            <br />
-            &nbsp;&nbsp;render() {
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return (</span>
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;button
-            onClick={this.handleClick}&gt;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{this.state.isToggleOn
-            ? 'ON' : 'OFF'}
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/button&gt;
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">);</span>
-            <br />
-            &nbsp;&nbsp;}
-            <br />
-            }
-            <br />
-            <br />
-            <span id="aspgreen">//Render the Toggle component to the DOM</span>
-            <br />
-            ReactDOM.render(&lt;Toggle /&gt;, document.getElementById('root'));
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="aspgreen"
+              >// This binding is necessary to make `this` work in the
+              callback</span
+            ><br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">this.handleClick</span> =
+            <span id="violet">this.handleClick.bind(this)</span>;<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;<span id="airfblue">handleClick</span>() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">this.setState</span>(<span
+              id="vanilla"
+              >prevState</span
+            >
+            => ({<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span id="violet"
+              >isToggleOn</span
+            >: !<span id="vanilla">prevState.isToggleOn</span><br />
+            &nbsp;&nbsp;}));<br />
+            &nbsp;&nbsp;}<br /><br />
+            &nbsp;&nbsp;<span id="airfblue">render</span>() {<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;<span id="violet">return</span> (<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;<span id="violet"
+              >button</span
+            >
+            <span id="airfblue">onClick</span>={<span id="violet"
+              >this.handleClick</span
+            >}&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{<span id="violet"
+              >this.state.isToggleOn</span
+            >
+            ? <span id="persorange">'ON'</span> :
+            <span id="persorange">'OFF'</span>}<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/<span id="violet"
+              >button</span
+            >&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;);<br />
+            &nbsp;&nbsp;}<br />
+            }<br /><br />
+            <span id="aspgreen">// Render the Toggle component to the DOM</span
+            ><br />
+            <span id="dskyblue">ReactDOM.render</span>(<span id="violet"
+              >&lt;Toggle /&gt;</span
+            >, <span id="violet">document.getElementById</span>(<span
+              id="persorange"
+              >'root'</span
+            >));<br />
           </code>
 
           <ul>
