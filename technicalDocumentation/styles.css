@@ -11,51 +11,54 @@ code {
   font-size: 90%;
 }
 
-#navbar {
+#asidenav {
   position: fixed;
   top: 0;
   left: 0;
   height: 100%;
-  width: 300px;
-  min-width: 290px;
+  width: 344px;
+  min-width: 244px;
   border-right: solid 1px #53b4d0;
   border-bottom: solid 2px #53b4d0;
 }
 
-#navbar header h2 {
+#asidenav header h2 {
   text-align: center;
   font-size: 1.1em;
   margin: 0 auto 15px;
 }
 
+#asidenav img {
+  width: 100%;
+  height: auto;
+}
+
 #doc {
   position: absolute;
   padding: 12px;
-  margin: 0 0 125px 310px;
+  margin: 0 0 125px 344px;
 }
 
-#navbar ul {
+#asidenav ul {
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: auto;
   padding: 0;
-  height: 90%;
+  height: 95%;
 }
 
-#navbar li {
+#asidenav li {
   list-style: none;
   width: 100%;
-  position: relative;
 }
 
-#navbar a {
+#asidenav a {
   text-decoration: none;
-  cursor: pointer;
   display: block;
-  padding: 10px 30px;
+  padding: 10px 28px;
   color: #60d8f9;
 }
 
-#navbar a:hover {
+#asidenav a:hover {
   background: #667c85;
   color: #272621;
 }
@@ -115,7 +118,7 @@ code {
 }
 
 @media (max-width: 815px) {
-  #navbar {
+  #asidenav {
     position: absolute;
     top: 0;
     right: 0;
@@ -126,13 +129,18 @@ code {
     margin-left: 0;
     border-left: none;
     border-bottom: hidden;
+    border-right: none;
+  }
+
+  #asidenav header h2 {
+    margin-top: 10px;
   }
 
   #doc {
     position: relative;
     margin-top: 380px;
     margin-right: 0;
-    margin-left: 0px;
+    margin-left: 0;
   }
 
   img {
