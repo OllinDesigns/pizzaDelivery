@@ -11,7 +11,7 @@ code {
   font-size: 90%;
 }
 
-#asidenav {
+#navbar {
   position: fixed;
   top: 0;
   left: 0;
@@ -22,43 +22,43 @@ code {
   border-bottom: solid 2px #53b4d0;
 }
 
-#asidenav header h2 {
+#navbar header h2 {
   text-align: center;
   font-size: 1.1em;
   margin: 0 auto 15px;
 }
 
-#asidenav img {
+#navbar img {
   width: 100%;
   height: auto;
 }
 
-#doc {
+#main-doc {
   position: absolute;
   padding: 12px;
   margin: 0 0 125px 344px;
 }
 
-#asidenav ul {
+#navbar ul {
   overflow-y: auto;
   overflow-x: auto;
   padding: 0;
   height: 95%;
 }
 
-#asidenav li {
+#navbar li {
   list-style: none;
   width: 100%;
 }
 
-#asidenav a {
+#navbar a {
   text-decoration: none;
   display: block;
   padding: 10px 28px;
   color: #60d8f9;
 }
 
-#asidenav a:hover {
+#navbar a:hover {
   background: #667c85;
   color: #272621;
 }
@@ -118,7 +118,7 @@ code {
 }
 
 @media (max-width: 815px) {
-  #asidenav {
+  #navbar {
     position: absolute;
     top: 0;
     right: 0;
@@ -132,11 +132,11 @@ code {
     border-right: none;
   }
 
-  #asidenav header h2 {
+  #navbar header h2 {
     margin-top: 10px;
   }
 
-  #doc {
+  #main-doc {
     position: relative;
     margin-top: 380px;
     margin-right: 0;
