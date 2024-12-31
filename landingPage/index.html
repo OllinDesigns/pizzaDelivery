@@ -5,45 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      rel="icon"
+      href="https://i.ibb.co/nQXJfQT/sextosol.jpg"
+      alt="sextosol"
+      border="0"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
 
-    <title>Landing Page</title>
+    <title>Rickenbacker Landing Page</title>
   </head>
   <body>
     <header id="header">
-      <img src="./img/ollinDlogo.png" alt="ollim logo" id="header-img" />
-
       <nav id="nav-bar">
         <a href="#section1" class="nav-link">Link 1</a>
-        <a href="#email" class="nav-link">Link 2</a>
+        <a href="#section2" class="nav-link">Link 2</a>
         <a href="#section3" class="nav-link">Link 3</a>
+        <a href="#section4" class="nav-link">Link 4</a>
       </nav>
-
-      <section id="section1">
-       
-        <!-- <iframe src="" frameborder="0" id="video"></iframe> -->
-
-        <iframe id="video" src="https://www.youtube.com/embed/32JI5YNQIic" frameborder="0" allowfullscreen>ZELDA/ミラージュ・ラヴァー</iframe>
-
-
-        <!-- <video src="https://www.youtube.com/watch?v=32JI5YNQIic">ZELDA/ミラージュ・ラヴァー</video> -->
-
-
-    </section>
-    
-    <section id="section2">
-        <h2>section 2</h2>
-
-        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
-            <input type="email" id="email" name="email" placeholder="Type your email again" required />
-            <input type="submit" id="submit" value="Submit">
-        </form>
-        
-    </section>
-    
-    <section id="section3">
-        <!-- Content of Section 3 -->
-    </section>
-
+      <div id="icon-text">
+        <img
+          src="./img/ollinmastermedicrepngbruto.png"
+          alt="Icon"
+          class="icon"
+          id="header-img"
+        />
+      </div>
     </header>
+
+    <section id="section1">
+      <h1>Rickenbacker</h1>
+      <br /><br />
+      <h2>Rickenbacker: A Legacy of Innovation and Sound</h2>
+      <p>
+        Rickenbacker is a renowned name in the world of musical instruments,
+        celebrated for its pioneering electric guitars and basses. Since its
+        founding in 1931, the brand has been synonymous with innovation,
+        craftsmanship, and a distinctive sound that has shaped the music of
+        generations. From iconic rock bands to modern musicians, Rickenbacker
+        instruments continue to inspire creativity and redefine the art of
+        music.
+      </p>
+    </section>
+
+    <section id="section2">
+      <iframe
+        id="video"
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/hRvdjTYnRN8?si=L_AF_FXynA1h6QLt"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+      ></iframe>
+    </section>
+
+    <section id="section3">
+      <form
+        id="form"
+        action="https://www.freecodecamp.com/email-submit"
+        method="post"
+      >
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Enter your email"
+          required
+        />
+        <input type="submit" id="submit" value="Submit" />
+      </form>
+    </section>
+
+    <section id="section4">
+      <div class="product-card">
+        <img
+          src="https://sc1.musik-produktiv.com/pic-003121068l/rickenbacker-standard-4003mg-lefthand.jpg"
+          alt="Product 1"
+          class="product-image"
+        />
+        <div class="product-text">Rickenbacker 330</div>
+        <button class="product-button">Learn More</button>
+      </div>
+      <div class="product-card">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/e/ec/Rickenbacker_4001S.jpg"
+          alt="Product 2"
+          class="product-image"
+        />
+        <div class="product-text">Rickenbacker 4003 Bass</div>
+        <button class="product-button">Learn More</button>
+      </div>
+    </section>
+
+    <section id="attributes-section">
+      <div class="attribute">
+        <span class="attribute-icon"><i class="fas fa-music"></i></span>
+        <span class="attribute-text">High Quality</span>
+      </div>
+
+      <div class="attribute">
+        <span class="attribute-icon"><i class="fas fa-play"></i></span>
+        <span class="attribute-text">Fast Performance</span>
+      </div>
+      <div class="attribute">
+        <span class="attribute-icon"><i class="fas fa-headphones"></i></span>
+        <span class="attribute-text">Professional Design</span>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-div">About Us</div>
+      <div class="footer-div">Contact</div>
+      <div class="footer-div">Social Media</div>
+    </footer>
   </body>
 </html>
