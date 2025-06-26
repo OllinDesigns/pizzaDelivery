@@ -56,16 +56,22 @@
       <h1>Personal Portfolio</h1>
     </section>
     <section id="projects">
+
+      <!-- first product card -->
       <div class="product-card">
-        <img
-          src="https://sc1.musik-produktiv.com/pic-003121068l/rickenbacker-standard-4003mg-lefthand.jpg"
-          alt="Product 1"
-          class="product-image"
-        />
-        <h3>Rickenbacker 330</h3>
-        <div class="product-text">Rickenbacker 330</div>
+        <div class="image-container">
+          <video autoplay muted loop playsinline width="100%">
+          <source src="./img/lamorsacropped.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        </div>
+        
+        <h3>Video morsero</h3>
+        <div class="product-text">El video de la morsa en loop</div>
         <button class="product-button">Learn More</button>
       </div>
+
+      <!-- image container hoover -->
       <div class="product-card">
         <div class="image-container">
           <img
@@ -84,7 +90,10 @@
         <div class="product-text">Rickenbacker 330</div>
         <button class="product-button">Learn More</button>
       </div>
+
+      <!-- with youtube Iframe -->
       <div class="product-card">
+        <div class="image-container">
         <iframe
           src="https://www.youtube.com/embed/NkfB2ZcLFqQ"
           title="lamorsa"
@@ -93,29 +102,61 @@
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen
         ></iframe>
-
+        </div>
         <h3>La morsa website</h3>
         <div class="product-text">
           The Walrus, A Wonderful Animal. This site celebrates the walrus, a
           fascinating creature we must protect. Hunting in the 16th century and
           modern climate change have severely threatened their survival..
         </div>
+        <a href="https://sites.google.com/view/lawebdelamorsa/inicio" target="_blank" rel="noopener noreferrer">
         <button class="product-button">Learn More</button>
-        <!-- https://sites.google.com/view/lawebdelamorsa/inicio -->
+        </a>
       </div>
+
+      <!-- imagecontainer hover video -->
       <div class="product-card">
         <!-- aqui el cambio -->
         <div class="image-container">
-        <img
-          src="https://i.ibb.co/b17KZxm/Irec3.png"
-          alt="Product 1"
-          class="product-image-lands"
-        />
+          <img src="./img/lamorsathumb.png" class="image" alt="product image" />
+
+          <video
+            class="hover-image"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="./img/lamorsacropped.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <h3>Revolting pullover</h3>
+        <h3>Fin primera linea</h3>
         <div class="product-text">Rickenbacker 330</div>
         <button class="product-button">Learn More</button>
       </div>
+
+       <div class="product-card">
+        <div class="image-container">
+          <img
+            class="image"
+            src="img/ReactdocuPC.png"
+            alt="Original Image"
+          />
+          <img
+            class="hover-image"
+            src="img/Reactdokumob.png"
+            alt="Hover Image"
+          />
+        </div>
+r
+        <h3>What is React?</h3>
+        <div class="product-text">React is a popular JavaScript library for building user interfaces.</div>
+        <button class="product-button">Learn More</button>
+      </div>
+
+
       <div class="product-card">
         <img
           src="./img/Imperial 1_11zon.jpg"
@@ -131,22 +172,24 @@
         <button class="product-button">Learn More</button>
       </div>
       <div class="product-card">
-        <img
-          src="./img/karma koma 1_11zon.jpg"
+        <div class="image-container">
+           <img
+          src="./img/paris.png"
           alt="Product 1"
-          class="product-image"
+          class="image-no-hover"
         />
+
+        </div>
+       
         <h3>Bullshit bag</h3>
         <div class="product-text">Rickenbacker 330</div>
         <button class="product-button">Learn More</button>
       </div>
     </section>
-    <div class="project-tile">
-      <h2>Project Title</h2>
-    </div>
-    <section id="comments">
-      <a href="#">empty a</a>
-      <a href="#" id="profile-link" target="_blank">profile-link</a>
-    </section>
+  
+    <footer>
+      <div class="product-text">this is the footer</div>
+
+    </footer>
   </body>
 </html>
