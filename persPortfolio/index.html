@@ -16,6 +16,12 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Montserrat:wght@200;300;400;500&family=Roboto:wght@100;300;500&family=Poppins:wght@400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav-bar id="navbar">
@@ -55,23 +61,99 @@
     <section id="welcome-section">
       <h1>Personal Portfolio</h1>
     </section>
-    <section id="projects">
 
+    <!-- aki el hero -->
+
+    <section id="hero">
+      <div class="hero-container">
+        <img
+          src="https://i.ibb.co/N6w2JXJ/irec4.png"
+          class="image"
+          alt="product image"
+          id="herothumb"
+        />
+        <video
+          class="hover-image"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+        >
+          <source src="./img/lamorsacropped.mp4" type="video/mp4" />
+          <!-- fallback image or message -->
+        </video>
+        <div id="hero-content">
+          <h1>Welcome to My Portfolio</h1>
+          <p>Creative. Bold. Functional.</p>
+        </div>
+      </div>
+    </section>
+    <section id="projectstitle">
+      <h2>My Projects</h2>
+    </section>
+
+    <section id="projects">
       <!-- first product card -->
+      <div class="product-card">
+        <!-- aqui el cambio -->
+        <div class="image-container">
+          <img
+            src="https://i.ibb.co/N6w2JXJ/irec4.png"
+            class="image"
+            alt="product image"
+          />
+
+          <video
+            class="hover-image"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+          >
+            <source src="./img/irec3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <h3>Dynamic Data Rendering</h3>
+        <div class="product-text">
+          Interactive web app featuring structured experimental data and ML
+          predictions for La₀.₈Sr₀.₂-based perovskites. Includes dynamic data
+          rendering and CSV-to-HTML conversion. Live demo available.
+        </div>
+        <button class="product-button">Learn More</button>
+      </div>
+
       <div class="product-card">
         <div class="image-container">
           <video autoplay muted loop playsinline width="100%">
-          <source src="./img/lamorsacropped.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+            <source src="./img/lamorsacropped.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        
+
         <h3>Video morsero</h3>
         <div class="product-text">El video de la morsa en loop</div>
         <button class="product-button">Learn More</button>
       </div>
 
       <!-- image container hoover -->
+      <div class="product-card">
+        <div class="image-container">
+          <img class="image" src="./img/pepites1.png" alt="Original Image" />
+          <img class="hover-image" src="./img/pepites2.png" alt="Hover Image" />
+        </div>
+
+        <h3>Pepites</h3>
+        <div class="product-text">
+          Modern women’s fashion site with dynamic brand curation, smooth UX,
+          and boutique-level personalization. Fully responsive and live at
+          pepites.org.uk.
+        </div>
+        <button class="product-button">Learn More</button>
+      </div>
+
       <div class="product-card">
         <div class="image-container">
           <img
@@ -90,18 +172,17 @@
         <div class="product-text">Rickenbacker 330</div>
         <button class="product-button">Learn More</button>
       </div>
-
       <!-- with youtube Iframe -->
       <div class="product-card">
         <div class="image-container">
-        <iframe
-          src="https://www.youtube.com/embed/NkfB2ZcLFqQ"
-          title="lamorsa"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          referrerpolicy="strict-origin-when-cross-origin"
-          allowfullscreen
-        ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/NkfB2ZcLFqQ"
+            title="lamorsa"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
         <h3>La morsa website</h3>
         <div class="product-text">
@@ -109,8 +190,12 @@
           fascinating creature we must protect. Hunting in the 16th century and
           modern climate change have severely threatened their survival..
         </div>
-        <a href="https://sites.google.com/view/lawebdelamorsa/inicio" target="_blank" rel="noopener noreferrer">
-        <button class="product-button">Learn More</button>
+        <a
+          href="https://sites.google.com/view/lawebdelamorsa/inicio"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button class="product-button">Learn More</button>
         </a>
       </div>
 
@@ -137,25 +222,22 @@
         <button class="product-button">Learn More</button>
       </div>
 
-       <div class="product-card">
+      <div class="product-card">
         <div class="image-container">
-          <img
-            class="image"
-            src="img/ReactdocuPC.png"
-            alt="Original Image"
-          />
+          <img class="image" src="img/ReactdocuPC.png" alt="Original Image" />
           <img
             class="hover-image"
             src="img/Reactdokumob.png"
             alt="Hover Image"
           />
         </div>
-r
+        r
         <h3>What is React?</h3>
-        <div class="product-text">React is a popular JavaScript library for building user interfaces.</div>
+        <div class="product-text">
+          React is a popular JavaScript library for building user interfaces.
+        </div>
         <button class="product-button">Learn More</button>
       </div>
-
 
       <div class="product-card">
         <img
@@ -173,23 +255,17 @@ r
       </div>
       <div class="product-card">
         <div class="image-container">
-           <img
-          src="./img/paris.png"
-          alt="Product 1"
-          class="image-no-hover"
-        />
-
+          <img src="./img/paris.png" alt="Product 1" class="image-no-hover" />
         </div>
-       
+
         <h3>Bullshit bag</h3>
         <div class="product-text">Rickenbacker 330</div>
         <button class="product-button">Learn More</button>
       </div>
     </section>
-  
+
     <footer>
       <div class="product-text">this is the footer</div>
-
     </footer>
   </body>
 </html>
